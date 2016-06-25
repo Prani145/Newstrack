@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>www.NewsTrack.com News Portal</title>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+
+<script  type="text/javascript" src="js/jquery.min.js"></script>
+ 	<script>
+      function cancel() 
+	  {
+		  window.close();
+	  }
+   </script>
+</head>
+
+<body>
+
+<section id="header" style="background-color:#000">
+<div class="container">
+<div class="col-md-4">
+<a href="index.html"><h1 style="color:#FFF;">NewsTrack</h1></a>
+</div>
+</div>
+</section>
+
+<section id="signform" style="margin-top:30px;margin-left:20px;">
+
+   <form id="signupform" method="post" action="signup.php">
+   	  <p>First Name:</p> <input type="text" name="fname" size="25" required/>
+      <p>Last Name:</p> <input type="text" name="lname" size="25" required/>
+      <p>Email:</p> <input type="email" name="email" size="25" required/>
+      <p>Username :</p> <input type="text" name="userN" size="25"  required />
+      <p>Password :</p> <input type="password" name="userP" size="25"  required/> <br /> <br />
+     
+      <p>
+         <input type="submit" name="select" value="Register"  class="btn btn-primary rounded"/>
+         <input type="button" name="select" value="Cancel"  class="btn btn-primary rounded"onclick="cancel();" />
+      </p>
+   </form>
+
+
+
+</section>
+</body>
+</html>

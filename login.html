@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>www.NewsTrack.com News Portal</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+ <script>
+      function signup() 
+	  {
+		
+         window.opener.mainform.userName.value=document.loginform.userN.value;
+         window.opener.mainform.passWord.value=document.loginform.userP.value; 
+		
+         window.close();
+      }
+      function cancel() 
+	  {
+		  window.close();
+	  }
+   </script>
+</head>
+<body>
+<section id="header" style="background-color:#000">
+<div class="container">
+<div class="col-md-4">
+<a href="index.html"><h1 style="color:#FFF;">NewsTrack</h1></a>
+ </div>
+</div>
+</section>
+
+
+<section id="loginform" style="margin-top:70px">
+<center>
+   <form name="loginform" method="post" action="logincheck.php">
+      <p>Username : <input type="text" name="userN" required size="25" value="Username"  onfocus="this.select();" required/></p>
+      <p>Password : <input type="password" name="userP" size="25" value="Password"  onfocus="this.select();" required/></p>
+      <p>
+         <input type="submit" name="select" value="Login"  class="btn btn-primary rounded" onclick="login();" />
+         <input type="button" name="select" value="Cancel"  class="btn btn-primary rounded"onclick="cancel();" />
+      </p>
+   </form>
+</center>
+
+</section>
+<script src="js/offcanvas.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+     <script src="js/bootstrap.min.js"></script>
+    
+</body>
+</html>

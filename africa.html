@@ -1,0 +1,291 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Africa News - NewsTrack</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<section id="header" style="background-color:#000">
+<div class="container">
+<div class="col-md-4">
+<a href="index.html"><h1 style="color:#FFF;">NewsTrack - Africa</h1></a>
+</div>
+</div>
+</section>
+
+<script>
+
+function areaSelectCheck(nameSelect)
+{ 	
+	val = document.getElementById("ca").value;
+	east = document.getElementById("ea").value;
+	west=document.getElementById("wa").value;
+	north=document.getElementById("na").value;
+	south=document.getElementById("sa").value;
+	
+		
+    if(nameSelect)
+	{
+        
+		
+        if(val == nameSelect.value){
+            document.getElementById("centraldiv").style.display = "block";
+			
+			document.getElementById("eastdiv").style.display = "none";
+			document.getElementById("westdiv").style.display = "none";
+			document.getElementById("northdiv").style.display = "none";
+			document.getElementById("southdiv").style.display = "none";
+			
+			
+        }
+        else{
+            document.getElementById("centraldiv").style.display = "none";
+        }
+		
+		
+		if(east == nameSelect.value)
+		{
+			document.getElementById("centraldiv").style.display = "none";
+			document.getElementById("eastdiv").style.display = "block";
+			document.getElementById("westdiv").style.display = "none";
+			document.getElementById("northdiv").style.display = "none";
+			document.getElementById("southdiv").style.display = "none";
+			
+		}
+		
+		 else{
+            document.getElementById("eastdiv").style.display = "none";
+        }
+		
+		if(west == nameSelect.value)
+		{
+			document.getElementById("centraldiv").style.display = "none";
+			document.getElementById("eastdiv").style.display = "none";
+			document.getElementById("westdiv").style.display = "block";
+			document.getElementById("northdiv").style.display = "none";
+			document.getElementById("southdiv").style.display = "none";
+			
+		}
+		
+		 else{
+            document.getElementById("westdiv").style.display = "none";
+        }
+		
+		if(north == nameSelect.value)
+		{
+			document.getElementById("centraldiv").style.display = "none";
+			document.getElementById("eastdiv").style.display = "none";
+			document.getElementById("westdiv").style.display = "none";
+			document.getElementById("northdiv").style.display = "block";
+			document.getElementById("southdiv").style.display = "none";
+			
+		}
+		
+		 else{
+            document.getElementById("northdiv").style.display = "none";
+        }
+		
+		
+		if(south == nameSelect.value)
+		{
+			document.getElementById("centraldiv").style.display = "none";
+			document.getElementById("eastdiv").style.display = "none";
+			document.getElementById("westdiv").style.display = "none";
+			document.getElementById("northdiv").style.display = "none";
+			document.getElementById("southdiv").style.display = "block";
+			
+		}
+		
+		 else{
+            document.getElementById("southdiv").style.display = "none";
+        }
+		
+ }
+    
+}
+</script>
+
+<section id="afnews">
+<div class="container">
+<div class="home-section marginbot-40">
+<div class="col-md-8">
+<div id="main">
+<h4>Top Stories</h4>
+<iframe  height="400"  width="100%" src="http://feed.mikle.com/widget/?rssmikle_url=http%3A%2F%2Fallafrica.com%2Fmisc%2Ftools%2Frss.html%3Ffeed%3Dlatest&rssmikle_frame_width=300&rssmikle_frame_height=400&frame_height_by_article=0&rssmikle_target=_blank&rssmikle_font=Arial%2C%20Helvetica%2C%20sans-serif&rssmikle_font_size=12&rssmikle_border=off&responsive=on&text_align=left&text_align2=left&corner=off&scrollbar=on&autoscroll=off&scrolldirection=up&scrollstep=3&mcspeed=20&sort=New&rssmikle_title=off&rssmikle_title_bgcolor=%23FFFFFF&rssmikle_title_color=%23FFFFFF&rssmikle_item_bgcolor=%23FFFFFF&rssmikle_item_title_length=55&rssmikle_item_title_color=%23222222&rssmikle_item_border_bottom=on&rssmikle_item_description=on&item_link=on&rssmikle_item_description_length=150&rssmikle_item_description_color=%23666666&rssmikle_item_date=gl1&rssmikle_timezone=Etc%2FGMT&datetime_format=%25b%20%25e%2C%20%25Y%20%25l%3A%25M%20%25p&item_description_style=text%2Btn&item_thumbnail=crop&item_thumbnail_selection=auto&article_num=15&rssmikle_item_podcast=off&" scrolling="no" name="rssmikle_frame" marginwidth="0" marginheight="0" vspace="0" hspace="0" frameborder="0"></iframe><div style="font-size:10px; text-align:center;"></div>
+
+</div> <!-- Main Class -->
+</div> <!-- Col -8  Class -->
+
+<div class="col-md-4">
+<h4>Top Videos</h4>
+
+<iframe  height="400"  width="300" src="http://feed.mikle.com/widget/?rssmikle_url=https%3A%2F%2Fwww.youtube.com%2Fuser%2Fsabcdigitalnews&rssmikle_frame_width=300&rssmikle_frame_height=400&frame_height_by_article=0&rssmikle_target=_blank&rssmikle_font=Arial%2C%20Helvetica%2C%20sans-serif&rssmikle_font_size=12&rssmikle_border=off&responsive=off&text_align=left&text_align2=left&corner=off&scrollbar=on&autoscroll=off&scrolldirection=up&scrollstep=3&mcspeed=20&sort=New&rssmikle_title=off&rssmikle_title_bgcolor=%230066FF&rssmikle_title_color=%23FFFFFF&rssmikle_item_bgcolor=%23FFFFFF&rssmikle_item_title_length=55&rssmikle_item_title_color=%23222222&rssmikle_item_border_bottom=on&rssmikle_item_description=on&item_link=on&rssmikle_item_description_length=150&rssmikle_item_description_color=%23666666&rssmikle_item_date=off&rssmikle_timezone=Etc%2FGMT&datetime_format=%25b%20%25e%2C%20%25Y%20%25l%3A%25M%20%25p&item_description_style=text%2Btn&item_thumbnail=full&item_thumbnail_selection=auto&article_num=15&rssmikle_item_podcast=player&" scrolling="no" name="rssmikle_frame" marginwidth="0" marginheight="0" vspace="0" hspace="0" frameborder="0"></iframe>
+<div style="font-size:10px; text-align:center; width:300px;"></div>
+
+</div> <!-- Col - 4 Class -->
+</div> <!-- Home Class -->
+</div> <!-- Container Class -->
+</section>
+
+<section id="reg">
+<div class="container">
+<div class="home-section marginbot-40">
+<div class="col-md-4">
+
+<h4>Choose Region</h4>
+
+ <select id="getFname" onchange="areaSelectCheck(this);" style="color:#000;">
+ <option value="" selected disabled hidden>Please select</option>
+ <option value="Central Africa" id="ca">Central Africa</option>
+ <option value="East Africa" id="ea">East Africa</option>
+ <option value="West Africa" id="wa">West Africa</option>
+ <option value="North Africa" id="na">North Africa</option>
+ <option value="South Africa" id="sa">South Africa</option>
+  </select>
+
+</div>
+</div>
+</div>
+
+<div class="container">
+	<div class="home-section marginbot-40">
+
+<div class="col-md-4">
+	<div id="centraldiv">
+
+<iframe  height="400"  width="300" src="http://feed.mikle.com/widget/?rssmikle_url=http%3A%2F%2Fallafrica.com%2Ftools%2Fheadlines%2Frdf%2Fcentralafrica%2Fheadlines.rdf&rssmikle_frame_width=300&rssmikle_frame_height=400&frame_height_by_article=0&rssmikle_target=_blank&rssmikle_font=Arial%2C%20Helvetica%2C%20sans-serif&rssmikle_font_size=12&rssmikle_border=off&responsive=on&text_align=left&text_align2=left&corner=off&scrollbar=on&autoscroll=off&scrolldirection=up&scrollstep=3&mcspeed=20&sort=New&rssmikle_title=on&rssmikle_title_bgcolor=%23333333&rssmikle_title_color=%23FFFFFF&rssmikle_item_bgcolor=%23FFFFFF&rssmikle_item_title_length=55&rssmikle_item_title_color=%23222222&rssmikle_item_border_bottom=on&rssmikle_item_description=on&item_link=on&rssmikle_item_description_length=150&rssmikle_item_description_color=%23666666&rssmikle_item_date=gl1&rssmikle_timezone=Etc%2FGMT&datetime_format=%25b%20%25e%2C%20%25Y%20%25l%3A%25M%20%25p&item_description_style=text%2Btn&item_thumbnail=full&item_thumbnail_selection=auto&article_num=15&rssmikle_item_podcast=off&" scrolling="no" name="rssmikle_frame" marginwidth="0" marginheight="0" vspace="0" hspace="0" frameborder="0"></iframe><div style="font-size:10px; text-align:center;"></div>
+
+	</div><!-- Central div class -->
+</div> <!-- Col - 4 class -->
+
+
+<div class="col-md-4">
+	<div id="eastdiv">
+<iframe  height="400"  width="300" src="http://feed.mikle.com/widget/?rssmikle_url=http%3A%2F%2Fallafrica.com%2Ftools%2Fheadlines%2Frdf%2Feastafrica%2Fheadlines.rdf&rssmikle_frame_width=300&rssmikle_frame_height=400&frame_height_by_article=0&rssmikle_target=_blank&rssmikle_font=Arial%2C%20Helvetica%2C%20sans-serif&rssmikle_font_size=12&rssmikle_border=off&responsive=on&text_align=left&text_align2=left&corner=off&scrollbar=on&autoscroll=off&scrolldirection=up&scrollstep=3&mcspeed=20&sort=New&rssmikle_title=on&rssmikle_title_bgcolor=%23333333&rssmikle_title_color=%23FFFFFF&rssmikle_item_bgcolor=%23FFFFFF&rssmikle_item_title_length=55&rssmikle_item_title_color=%23222222&rssmikle_item_border_bottom=on&rssmikle_item_description=on&item_link=on&rssmikle_item_description_length=150&rssmikle_item_description_color=%23666666&rssmikle_item_date=gl1&rssmikle_timezone=Etc%2FGMT&datetime_format=%25b%20%25e%2C%20%25Y%20%25l%3A%25M%20%25p&item_description_style=text%2Btn&item_thumbnail=full&item_thumbnail_selection=auto&article_num=15&rssmikle_item_podcast=off&" scrolling="no" name="rssmikle_frame" marginwidth="0" marginheight="0" vspace="0" hspace="0" frameborder="0"></iframe><div style="font-size:10px; text-align:center; "></div>
+
+	</div> <!-- East div class -->
+</div> <!-- Col - 4 class -->
+
+<div class="col-md-4">
+	<div id="westdiv">
+<iframe  height="400"  width="300" src="http://feed.mikle.com/widget/?rssmikle_url=http%3A%2F%2Fallafrica.com%2Ftools%2Fheadlines%2Frdf%2Fwestafrica%2Fheadlines.rdf&rssmikle_frame_width=300&rssmikle_frame_height=400&frame_height_by_article=0&rssmikle_target=_blank&rssmikle_font=Arial%2C%20Helvetica%2C%20sans-serif&rssmikle_font_size=12&rssmikle_border=off&responsive=on&text_align=left&text_align2=left&corner=off&scrollbar=on&autoscroll=off&scrolldirection=up&scrollstep=3&mcspeed=20&sort=New&rssmikle_title=on&rssmikle_title_bgcolor=%23333333&rssmikle_title_color=%23FFFFFF&rssmikle_item_bgcolor=%23FFFFFF&rssmikle_item_title_length=55&rssmikle_item_title_color=%23222222&rssmikle_item_border_bottom=on&rssmikle_item_description=on&item_link=on&rssmikle_item_description_length=150&rssmikle_item_description_color=%23666666&rssmikle_item_date=gl1&rssmikle_timezone=Etc%2FGMT&datetime_format=%25b%20%25e%2C%20%25Y%20%25l%3A%25M%20%25p&item_description_style=text%2Btn&item_thumbnail=full&item_thumbnail_selection=auto&article_num=15&rssmikle_item_podcast=off&" scrolling="no" name="rssmikle_frame" marginwidth="0" marginheight="0" vspace="0" hspace="0" frameborder="0"></iframe><div style="font-size:10px; text-align:center; "></div>
+
+	</div> <!-- West div class -->
+</div><!-- Col - 4 class -->
+
+<div class="col-md-4">
+	<div id="northdiv">
+<iframe  height="400"  width="300" src="http://feed.mikle.com/widget/?rssmikle_url=http%3A%2F%2Fallafrica.com%2Ftools%2Fheadlines%2Frdf%2Fnorthafrica%2Fheadlines.rdf&rssmikle_frame_width=300&rssmikle_frame_height=400&frame_height_by_article=0&rssmikle_target=_blank&rssmikle_font=Arial%2C%20Helvetica%2C%20sans-serif&rssmikle_font_size=12&rssmikle_border=off&responsive=on&text_align=left&text_align2=left&corner=off&scrollbar=on&autoscroll=off&scrolldirection=up&scrollstep=3&mcspeed=20&sort=New&rssmikle_title=on&rssmikle_title_bgcolor=%23333333&rssmikle_title_color=%23FFFFFF&rssmikle_item_bgcolor=%23FFFFFF&rssmikle_item_title_length=55&rssmikle_item_title_color=%23222222&rssmikle_item_border_bottom=on&rssmikle_item_description=on&item_link=on&rssmikle_item_description_length=150&rssmikle_item_description_color=%23666666&rssmikle_item_date=gl1&rssmikle_timezone=Etc%2FGMT&datetime_format=%25b%20%25e%2C%20%25Y%20%25l%3A%25M%20%25p&item_description_style=text%2Btn&item_thumbnail=full&item_thumbnail_selection=auto&article_num=15&rssmikle_item_podcast=off&" scrolling="no" name="rssmikle_frame" marginwidth="0" marginheight="0" vspace="0" hspace="0" frameborder="0"></iframe><div style="font-size:10px; text-align:center; "></div>
+
+	</div><!-- North div class -->
+</div><!-- Col - 4 class -->
+
+
+<div class="col-md-4">
+	<div id="southdiv">
+<iframe  height="400"  width="300" src="http://feed.mikle.com/widget/?rssmikle_url=http%3A%2F%2Fallafrica.com%2Ftools%2Fheadlines%2Frdf%2Fsouthernafrica%2Fheadlines.rdf&rssmikle_frame_width=300&rssmikle_frame_height=400&frame_height_by_article=0&rssmikle_target=_blank&rssmikle_font=Arial%2C%20Helvetica%2C%20sans-serif&rssmikle_font_size=12&rssmikle_border=off&responsive=on&text_align=left&text_align2=left&corner=off&scrollbar=on&autoscroll=off&scrolldirection=up&scrollstep=3&mcspeed=20&sort=New&rssmikle_title=on&rssmikle_title_bgcolor=%23333333&rssmikle_title_color=%23FFFFFF&rssmikle_item_bgcolor=%23FFFFFF&rssmikle_item_title_length=55&rssmikle_item_title_color=%23222222&rssmikle_item_border_bottom=on&rssmikle_item_description=on&item_link=on&rssmikle_item_description_length=150&rssmikle_item_description_color=%23666666&rssmikle_item_date=gl1&rssmikle_timezone=Etc%2FGMT&datetime_format=%25b%20%25e%2C%20%25Y%20%25l%3A%25M%20%25p&item_description_style=text%2Btn&item_thumbnail=full&item_thumbnail_selection=auto&article_num=15&rssmikle_item_podcast=off&" scrolling="no" name="rssmikle_frame" marginwidth="0" marginheight="0" vspace="0" hspace="0" frameborder="0"></iframe><div style="font-size:10px; text-align:center; "></div>
+
+</div><!-- South div class -->
+</div><!-- Col 4 class -->
+
+</div><!-- Home section class -->
+	</div><!-- Container class -->
+		</section><!-- End of section -->
+
+<section id="blog">
+<div class="container">
+<div class="home-section marginbot-40">
+<div class="stories">
+<h2>African Voices</h2>
+<div class="col-md-4">
+
+<img src="http://i2.wp.com/www.africaontheblog.com/wp-content/uploads/2016/03/2016-02-14-14.52.55-3-e1458543996678.jpg?resize=240%2C200"/>
+<h5>Why do we need days like -International Women's Day</h5>
+<a href="http://www.africaontheblog.com/need-days-like-international-womens-day/" target="_blank"><input type="button" value="Read More"  class="btn btn-primary rounded"/></a>
+</div>
+
+<div class="col-md-4">
+
+<img src="http://i1.wp.com/www.africaontheblog.com/wp-content/uploads/2016/03/GEJ2.jpg?resize=150%2C150" height="200px"/>
+<h5>Nigeria's Journey towards Greatness; An Estimate</h5>
+<a href="http://www.africaontheblog.com/nigerias-journey-towards-greatness-estimate/" target="_blank"><input type="button" value="Read More"  class="btn btn-primary rounded"/></a>
+</div>
+
+<div class="col-md-4">
+<img src="http://i2.wp.com/www.africaontheblog.com/wp-content/uploads/2016/02/IMG_7619.jpg?resize=360%2C200"/>
+<h5>Reasons to Reconsider Celebrating KFC Expansion in Malawi</h5>
+<a href="http://www.africaontheblog.com/reasons-reconsider-celebrating-kfc-expansion-malawi/" target="_blank"><input type="button" value="Read More"  class="btn btn-primary rounded"/></a>
+</div>
+
+</div>
+</div>
+</div>
+</section>
+
+<section id="footer">
+<div class="footer_bottom" style="background-color:#000;color:#FFF; margin-top:20px;">
+  <div class="container">
+  
+  <div class="col-md-3 col-sm-3">
+  <ul class="footermenu" style="color:#eee">
+ 		<h3 style="color:#FF6B6B;"><li>World</li></h3>
+ 		 <h5><li><a href="africa.html" target="_blank">Africa</a></li></h5>
+  		 <h5><li><a href="asia.html" target="_blank">Asia</a></li></h5>
+ 		 <h5><li><a href="europe.html" target="_blank">Europe</a></li></h5>
+  		 <h5><li><a href="latin.html" target="_blank">Latin America</a></li></h5>
+          <h5><li><a href="uscanada.html" target="_blank">US & Canada</a></li></h5>
+ </ul>
+  </div>
+  <div class="col-md-3 col-sm-3">
+  <ul class="footermenu">
+   <h3 style="color:#FF6B6B;"><li>Technology</li></h3>
+    	<h5><li>Gadgets</li></h5>
+  		 <h5><li>Innovations</li></h5>
+ 		 <h5><li>Privacy</li></h5>
+  		
+  </ul>
+  </div>
+  <div class="col-md-3 col-sm-3">
+  <ul class="footermenu">
+   <h3 style="color:#FF6B6B;"><li>Sports</li></h3>
+    <h5><li><a href="sports.html">Football</a></li></h5>
+  		 <h5><li><a href="sports.html">Cricket</a></li></h5>
+ 		 <h5><li><a href="sports.html">Basketball</a></li></h5>
+  		 <h5><li><a href="sports.html">Tennis</a></li></h5>
+  		 <h5><li><a href="sports.html">Formula One</a></li></h5>
+  </ul>
+  </div>
+  <div class="col-md-3 col-sm-3">
+  <ul class="footermenu">
+   <h3 style="color:#FF6B6B;"><li>Entertainment</li></h3>
+    <h5><li>Movies</li></h5>
+  		 <h5><li>Songs</li></h5>
+ 		 <h5><li>Videos</li></h5>
+  		 <h5><li>Games</li></h5>
+  </ul>
+</div>
+</div> <!--Footer Class-->
+</div><!--Container Class-->
+  
+<center> 
+ <div class="share-buttons">
+<a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.newstrack.esy.es%2FNews&t=News%20Portal" title="Share on Facebook" target="_blank"><img src="images/Facebook.png"></a>
+  <a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fwww.newstrack.esy.es%2FNews&text=News%20Portal:%20http%3A%2F%2Fwww.newstrack.esy.es%2FNews" target="_blank" title="Tweet"><img src="images/Twitter.png"></a>
+ <a href="https://plus.google.com/share?url=http%3A%2F%2Fwww.newstrack.esy.es%2FNews" target="_blank" title="Share on Google+"><img src="images/Google+.png"></a>
+ <a href="http://www.tumblr.com/share?v=3&u=http%3A%2F%2Fwww.newstrack.esy.es%2FNews&t=News%20Portal&s=" target="_blank" title="Post to Tumblr"><img src="images/Tumblr.png"></a>
+ <a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fwww.newstrack.esy.es%2FNews&title=News%20Portal&summary=Site%20to%20display%20news&source=http%3A%2F%2Fwww.newstrack.esy.es%2FNews" target="_blank" title="Share on LinkedIn"><img src="images/LinkedIn.png"></a>
+  <a href="http://wordpress.com/press-this.php?u=http%3A%2F%2Fwww.newstrack.esy.es%2FNews&t=News%20Portal&s=Site%20to%20display%20news" target="_blank" title="Publish on WordPress"><img src="images/Wordpress.png"></a>
+ <a href="mailto:?subject=News%20Portal&body=Site%20to%20display%20news:%20http%3A%2F%2Fwww.newstrack.esy.es%2FNews" target="_blank" title="Email"><img src="images/Email.png"></a>
+
+</div>
+   </center>  
+   <p align="center" >© 2015 NewsTrack.All Rights Reserved</p>
+</div>
+
+</section>
+</body>
+</html>
